@@ -1,0 +1,111 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format: {#####}",
+ "creation": "2023-01-21 02:33:33.496995",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "name1",
+  "direction",
+  "customer",
+  "order_id",
+  "order_date",
+  "company",
+  "discharging_port",
+  "awb_number",
+  "expected_recieve_date",
+  "actual_recieve_date",
+  "consignent_status"
+ ],
+ "fields": [
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "label": "Name"
+  },
+  {
+   "fieldname": "direction",
+   "fieldtype": "Select",
+   "label": "Direction",
+   "options": "Import\nExport"
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Customer",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "order_id",
+   "fieldtype": "Link",
+   "label": "Order Id",
+   "options": "Sales Order"
+  },
+  {
+   "fieldname": "order_date",
+   "fieldtype": "Date",
+   "label": "Order Date"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "fieldname": "discharging_port",
+   "fieldtype": "Data",
+   "label": "Discharging Port"
+  },
+  {
+   "fieldname": "awb_number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "AWB Number"
+  },
+  {
+   "fieldname": "expected_recieve_date",
+   "fieldtype": "Datetime",
+   "label": "Expected Recieve Date"
+  },
+  {
+   "fieldname": "actual_recieve_date",
+   "fieldtype": "Datetime",
+   "label": "Actual Recieve Date"
+  },
+  {
+   "fieldname": "consignent_status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Consignent Status",
+   "options": "\nCleared\nIn Warehouse\nIn Progress\nDelivered\nReturned\nLost"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-01-21 10:35:24.051071",
+ "modified_by": "Administrator",
+ "module": "Haulage Management",
+ "name": "Consignment",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
