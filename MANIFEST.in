@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include haulage_management *.css
+recursive-include haulage_management *.csv
+recursive-include haulage_management *.html
+recursive-include haulage_management *.ico
+recursive-include haulage_management *.js
+recursive-include haulage_management *.json
+recursive-include haulage_management *.md
+recursive-include haulage_management *.png
+recursive-include haulage_management *.py
+recursive-include haulage_management *.svg
+recursive-include haulage_management *.txt
+recursive-exclude haulage_management *.pyc
