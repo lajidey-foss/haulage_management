@@ -8,16 +8,28 @@
  "engine": "InnoDB",
  "field_order": [
   "name1",
-  "direction",
+  "consignent_status",
   "customer",
   "order_id",
   "order_date",
-  "company",
+  "column_break_6",
+  "shipment_weight",
   "discharging_port",
   "awb_number",
   "expected_recieve_date",
   "actual_recieve_date",
-  "consignent_status"
+  "direction",
+  "parcels_section",
+  "consignment_parcels",
+  "calc_parcels_weight",
+  "section_break_15",
+  "company",
+  "shipment_details_section",
+  "service_provider",
+  "shipment_id",
+  "column_break_21",
+  "carrier",
+  "carrier_service"
  ],
  "fields": [
   {
@@ -82,11 +94,71 @@
    "in_list_view": 1,
    "label": "Consignent Status",
    "options": "\nCleared\nIn Warehouse\nIn Progress\nDelivered\nReturned\nLost"
+  },
+  {
+   "fieldname": "parcels_section",
+   "fieldtype": "Section Break",
+   "label": "Parcels"
+  },
+  {
+   "fieldname": "consignment_parcels",
+   "fieldtype": "Table",
+   "label": "Consignment Parcels",
+   "options": "Parcels Detail"
+  },
+  {
+   "default": "0",
+   "fieldname": "calc_parcels_weight",
+   "fieldtype": "Float",
+   "label": "Calc Parcels Weight (kg)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "shipment_details_section",
+   "fieldtype": "Section Break",
+   "label": "Shipment Details"
+  },
+  {
+   "fieldname": "service_provider",
+   "fieldtype": "Data",
+   "label": "Service Provider"
+  },
+  {
+   "fieldname": "shipment_id",
+   "fieldtype": "Data",
+   "label": "Shipment ID"
+  },
+  {
+   "fieldname": "carrier",
+   "fieldtype": "Data",
+   "label": "Carrier"
+  },
+  {
+   "fieldname": "carrier_service",
+   "fieldtype": "Data",
+   "label": "Carrier Service"
+  },
+  {
+   "fieldname": "shipment_weight",
+   "fieldtype": "Float",
+   "label": "Shipment Weight (kg)"
+  },
+  {
+   "fieldname": "section_break_15",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_21",
+   "fieldtype": "Column Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-01-21 10:35:24.051071",
+ "modified": "2023-01-22 02:10:56.721072",
  "modified_by": "Administrator",
  "module": "Haulage Management",
  "name": "Consignment",
